@@ -1,0 +1,89 @@
+/* Contact and FAQ styling sheet */
+body, html{
+  background-image: url(https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/13582150_10209128093860104_6792097865807996328_o.jpg?_nc_cat=102&_nc_ht=scontent-lhr3-1.xx&oh=0af57fc40aaa2672e85af628a49c0e27&oe=5C9FCD03);
+  font: arial;
+  color: black;
+
+}
+h1, html{
+  color: rgb(200, 0, 0);
+  background-color: rgba(1, 1, 1, 0.7);
+  padding: 10px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgba(1, 1, 1, 0.5);
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+/* Add buttons */
+
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    /* margin-left: 5px; */
+}
+
+.active:after {
+    /* content: "\2212"; */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 5px;
+    background-color: rgb(200, 100, 100, 0.8);
+    display: none;
+    overflow: hidden;
+}
+
+/* Contact form styling */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(200, 0, 0, 0.7);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(1, 1, 0, 0.7);
+    padding: 20px;
+    color: white;
+}
